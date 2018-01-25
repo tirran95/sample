@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>etc</title>
+</head>
+<body>
+	<button type="submit">전송</button>
+	<input type="submit" value="전송"/>
+	<button type="reset">초기화</button>
+	<input type="reset" value="초기화"/>
+	<button type="button">버튼</button>
+	<button type="submit"><img src="img/tick.png"/></button>
+	<input type="image" src="img/tick.png"/><br><br>
+	
+	<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+		<input type="number" id="num1"/> +
+		<input type="number" id="num2"/> =
+		<output id="result"></output>
+	</form>
+	
+	<progress value="30" max="100"></progress>
+	<progress value="0.3"></progress>
+	<meter value="10" max="100"></meter>
+	<meter value="0.1"></meter>
+	<meter value="10" min="2" max="20" low="8" high="16" optimum="10"></meter>
+</body>
+</html>

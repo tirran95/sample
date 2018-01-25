@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>dropDown</title>
+</head>
+<body>
+	<form action="#">
+		<select name="num">
+			<option value="1">가</option>
+			<option value="2">나</option>
+		</select>
+		
+		<select name="chr">
+			<option>가</option>
+			<option>나</option>
+		</select>
+		
+		<input type="submit"/>
+		
+		<select size="2">
+			<option value="1">가</option>
+			<option value="2">나</option>
+		</select>		
+		
+		<select multiple>
+			<option value="1">가</option>
+			<option value="2">나</option>
+		</select>
+		
+		<select>
+			<option value="1">가</option>
+			<option value="2" selected>나</option>
+		</select>
+		
+		<select>
+			<optgroup label="공대">
+				<option value="건축">건축학과</option>
+				<option value="기계">기계학과</option>
+			</optgroup>
+			<optgroup label="인문대">
+				<option value="역사">사학과</option>
+				<option value="국문">국문학과</option>
+			</optgroup>
+		</select>
+		
+		<input type="text" list="mobileOS">
+		<datalist id="mobileOS">
+			<option value="ios"></option>
+			<option value="android"></option>
+			<option value="windows"></option>
+		</datalist>
+		
+		<input type="text" list="mobile">
+		<datalist id="mobile">
+			<option value="ios" label="애플"></option>
+			<option value="android" label="구글"></option>
+			<option value="windows" label="MS"></option>
+		</datalist>
+		
+		<textarea name="intro" rows="5" cols="60"></textarea>
+	</form>
+</body>
+</html>
