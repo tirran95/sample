@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kim.donghyeon.ums.dao.mapper.UserMapper">
+	<select id="getUsers" resultType="user">
+		select user_no userNum, user_name userName, reg_date regDate
+		from users order by user_no
+	</select>
+	
+	<select id="getUser" parameterType="int" resultType="user">
+		select user_no userNum, user_name userName, reg_date regDate
+		from users where user_no=#{no}
+	</select>
+	
+	<insert id="addUser" parameterType="string">
+		insert into users(user_no,user_name) values(user_no_seq.nextval,#{userName})
+	</insert>
+	
+	<update id="updateUser" parameterType="user">
+		update users set user_name=#{userName},reg_date=sysdate where user_no=#{userNum}
+	</update>
+	
+	<delete id="delUser" parameterType="int">
+		delete users where user_no=#{userNum}
+	</delete>
+</mapper>
